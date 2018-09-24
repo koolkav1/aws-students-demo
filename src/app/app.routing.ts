@@ -9,6 +9,11 @@ export const rootRouterConfig: Routes = [
     redirectTo: 'others/blank', 
     pathMatch: 'full' 
   },
+  { 
+    path: 'students', 
+    redirectTo: 'students/view-students', 
+    pathMatch: 'full' 
+  },
   {
     path: '', 
     component: AuthLayoutComponent,
@@ -29,6 +34,18 @@ export const rootRouterConfig: Routes = [
         path: 'others', 
         loadChildren: './views/others/others.module#OthersModule', 
         data: { title: 'Others', breadcrumb: 'OTHERS'}
+      }
+    ]
+  },
+  {
+    path: '',
+    component: AdminLayoutComponent,
+    canActivate: [AuthGuard],
+    children: [
+      {
+        path: 'students',
+        loadChildren: './views/students/students.module#StudentsModule',
+        data: { title: 'Students', breadcrumb: 'STUDENTS'}
       }
     ]
   },

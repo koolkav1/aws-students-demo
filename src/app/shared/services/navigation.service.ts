@@ -37,6 +37,26 @@ export class NavigationService {
       icon: 'blur_on',
       state: 'others/blank',
       
+    },
+    {
+      name: 'STUDENTS',
+      type: 'dropDown',
+      tooltip: 'Students',
+      icon: 'school',
+      sub: [
+        {
+          name: 'View Students',
+          type: 'link',
+          icon: 'people',
+          state: 'students/view-students'
+        },
+        {
+          name: 'Add Student',
+          type: 'link',
+          icon: 'person_add',
+          state: 'students/add-student'
+        }
+      ]
     }
   ]
 
