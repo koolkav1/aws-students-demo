@@ -2,6 +2,7 @@ import { Routes } from "@angular/router";
 import { ViewStudentsComponent } from "./view-students/view-students.component";
 import { AddStudentComponent } from "./add-student/add-student.component";
 import { EditStudentComponent } from "./edit-student/edit-student.component";
+import { DisplayStudentComponent } from "./display-student/display-student.component";
 
 export const StudentRoutes: Routes = [
    
@@ -25,6 +26,11 @@ export const StudentRoutes: Routes = [
           component: AddStudentComponent,
           data: { title: 'Add Student', breadcrumb: 'ADD STUDENT'}
         },
+        {
+            path: 'display-student/:id',
+            component:DisplayStudentComponent,
+            data: { title: 'Display Student', breadcrumb: 'DISPLAY STUDENT'}
+        }
 
         ]
       }

@@ -15,7 +15,7 @@
   "dependencies": {
     "@agm/core": "1.0.0-beta.2",
     "@angular/animations": "6.0.1",
-    "@angular/cdk": "6.0.1",
+    "@angular/cdk": "^6.4.7",
     "@angular/common": "6.0.1",
     "@angular/compiler": "6.0.1",
     "@angular/core": "6.0.1",
@@ -45,6 +45,7 @@
     "ng2-file-upload": "1.2.1",
     "ng2-validation": "4.2.0",
     "ngx-color-picker": "5.3.8",
+    "ngx-nested-data-table": "0.0.8",
     "ngx-pagination": "3.1.0",
     "ngx-perfect-scrollbar": "6.1.0",
     "ngx-quill": "2.0.4",
