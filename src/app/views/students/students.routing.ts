@@ -12,15 +12,15 @@ export const StudentRoutes: Routes = [
         {
           path: 'view-students',
           component: ViewStudentsComponent,
-          data: { title: 'View Students', breadcrumb: 'VIEW STUDENTS' },
-          children: [
-              {
-                  path: ':id',
-                  component: EditStudentComponent,
-                  data: { title: 'Edit Student', breadcrumb: 'EDIT STUDENT'}
-              }
-          ]
+          data: { title: 'View Students', breadcrumb: 'VIEW STUDENTS' },         
+          
         },
+        {
+            path: 'edit-student/:id',
+            component: EditStudentComponent,
+            data: { title: 'Edit Student', breadcrumb: 'EDIT STUDENT'}
+        },
+        
         {
           path: 'add-student',
           component: AddStudentComponent,

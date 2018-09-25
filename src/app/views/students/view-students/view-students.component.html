@@ -29,11 +29,11 @@
       <mat-icon>more_vert</mat-icon>
     </button>
     <mat-menu #studentOptions="matMenu">
-      <button mat-menu-item (click)="viewStudent(element)">
+      <button mat-menu-item  routerLink="../display-student/{{element.name}}">
         <mat-icon>person</mat-icon>
         <span>Display Student</span>
       </button>
-      <button mat-menu-item (click)="editStudent(element)">
+      <button mat-menu-item routerLink="../edit-student/{{element.name}}">
         <mat-icon>person_outline</mat-icon>
         <span>Edit Student</span>
       </button>
